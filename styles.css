@@ -1,5 +1,29 @@
 body {
     font-size: 0.875rem;
+    background: rgb(43, 121, 130);
+    background: #191918;
+    color: #fff
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 20px;
+}
+
+h1 {
+    color:  rgb(255, 218, 33);
+}
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgb(255, 218, 33);
+    color: #161617;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .feather {
@@ -26,6 +50,31 @@ body {
     .sidebar {
         top: 5rem;
     }
+}
+
+.navbar .navbar-brand {
+    border: 1px solid rgb(244, 207, 24);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(38, 35, 35);
+    text-transform: uppercase;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.navbar .navbar-brand:hover {
+    border: 1px solid rgb(255, 255,255);
+    padding: 10px;
+    background-color: rgb(255, 218, 33);
+    color: #191818;
+    text-transform: uppercase;
 }
 
 .sidebar-sticky {
@@ -71,7 +120,8 @@ body {
 .map {
     width: 100%;
     height: 600px;
-    background-color: red;
+    border: 1px solid rgb(255, 255,255);
+    background-color: rgba(74, 157, 222, 0.749);
 }
 /*
  * Navbar

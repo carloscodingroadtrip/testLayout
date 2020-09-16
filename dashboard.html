@@ -33,13 +33,20 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="#">National Park Application</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="#">Dashboard</a>
 					</li>
 					<li class="nav-item">
@@ -48,62 +55,92 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Data</a>
 					</li>
-
 				</ul>
 			</div>
 		</nav>
-		<!-- DROP DOWNS -->
-		<div class="container">
-			<div class="mt-5 mb-4">
-				<div class="d-flex justify-content-around">
-					<!-- dropdowns -->
-					<div class="col-4 p-2">
-						<label for="cars">Choose a car:</label>
-						<select name="cars" id="cars">
-							<option value="volvo">Volvo</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
-						</select>
-					</div>
-					<div class="col-4 p-2">
-						<label for="cars">Choose a car:</label>
-						<select name="cars" id="cars">
-							<option value="volvo">Volvo</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
-						</select>
-					</div>
-					<div class="col-4 p-2">
-						<label for="cars">Choose a car:</label>
-						<select name="cars" id="cars">
-							<option value="volvo">Volvo</option>
-							<option value="saab">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
-						</select>
-					</div>
-				</div>
-				<div class="row container">
-					<div class="col-4"></div>
-					<div class="col-4"><button>submit</button></div>
-					<div class="col-4"></div>
-				</div>
+		<h1 class="d-flex flex-row">
+			<div class="ml-3 mt-4">
+				<h1>Interactive Dashboard</h1>
 			</div>
-		</div>
+		</h1>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-                    <div class="map"></div>
-                </div>
+			<div class="col-4 p-2">
+				<label for="cars">
+					<h4>Select Region:</h4>
+				</label>
+				<select name="cars" id="cars">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+				</select>
 			</div>
 		</div>
+
+		<!-- region map -->
+		<div class="container-fluid">
+			<div class="row mt-3">
+				<div class="map mr-4 ml-4 mb-4">
+					<h1 class="text-center mt-5">Main Region Map</h1>
+				</div>
+			</div>
+		</div>
+		<!-- below the region map, displays the linked maps -->
+
+		<div class="container-fluid">
+			<div class="row ml-2 mr-2 mt-5 mb-5">
+				<div class="container-fluid">
+					<div class="col-4">
+						<label for="cars">
+							<h4>Select Month:</h4>
+						</label>
+						<select name="cars" id="cars">
+							<option value="volvo">Jan</option>
+							<option value="saab">Feb</option>
+							<option value="mercedes">Mar</option>
+							<option value="audi">Apr</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-6 mb-4">
+					<div class="map">
+						<h1 class="text-center mt-5">monthly visits in a region by Month</h1>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<div class="map">
+						<h1 class="text-center mt-5">2019 visits per park data</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- monthly visits map -->
+		<div class="container-fluid">
+			<div class="col-4 p-2">
+				<label for="cars">
+					<h4>Select Park:</h4>
+				</label>
+				<select name="cars" id="cars">
+					<option value="volvo">Abraham Lincoln</option>
+					<option value="saab">ABC....</option>
+					<option value="mercedes">XYZ...</option>
+					<option value="audi">TGY...</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row mt-3">
+				<div class="map mr-4 ml-4"></div>
+			</div>
+		</div>
+
 		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <small>Copyright &copy; Your Website</small>
-    </div>
-  </footer>
+			<div class="container text-center">
+				<small>Copyright &copy; RICE UNIVERSITY - PROJECT #2</small>
+			</div>
+		</footer>
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
